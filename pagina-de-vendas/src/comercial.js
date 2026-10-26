@@ -1,6 +1,6 @@
 // Uma fonte para condições, datas e destinos. Não inventar URLs de checkout.
 export const comercial = {
-  essential: { id: 'essencial', name: 'ÍCON Essencial', price: 'R$ 67,90', priceNumber: 67.90, prompts: 15, models: 4, checkoutUrl: import.meta.env.VITE_CHECKOUT_ESSENCIAL_URL || '', cta: 'Quero o Essencial', label: 'PARA ESTUDAR NO SEU RITMO' },
+  essential: { id: 'essencial', name: 'ÍCON Essencial', price: 'R$ 67,90', priceNumber: 67.90, prompts: 15, models: 4, checkoutUrl: import.meta.env.VITE_CHECKOUT_ESSENCIAL_URL || 'https://pay.cakto.com.br/358ks7b_1245354', cta: 'Quero o Essencial', label: 'PARA ESTUDAR NO SEU RITMO' },
   formation: { id: 'formacao', name: 'Formação ÍCON', price: 'R$ 197,90', priceNumber: 197.90, prompts: 60, models: 24, assistants: 5, recorded: 4, live: 4, hours: 12, checkoutUrl: import.meta.env.VITE_CHECKOUT_FORMACAO_URL || '', cta: 'Quero a formação completa', label: 'MATERIAIS + AULAS + PRÁTICA AO VIVO' },
   guaranteeDays: 7,
   recordedRelease: '03/11/2026',
