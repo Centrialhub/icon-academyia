@@ -1,5 +1,11 @@
 # ÍCON Academy
+Página de vendas em `pagina-de-vendas/`.
 
-Landing page oficial do ÍCON Essencial e da Formação IA na Prática Escolar.
+- Node20+ recomendado.
+- Raiz do projeto na hospedagem: `pagina-de-vendas`.
+- Instalação: `npm ci`.
+- Desenvolvimento: `npm run dev`.
+- Build: `npm run build`.
+- Saída: `dist`.
 
-Projeto React/Vite em `pagina-de-vendas/`. Regras de produção em `AGENTS.md` e `regras-landing-pages/PADRAO.md`.
+As regras reutilizáveis de landing pages estão em `regras-landing-pages/` e `AGENTS.md`. A página está pronta para revisão visual; destinos comerciais e informações pendentes constam da documentação do projeto.

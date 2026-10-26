@@ -1,0 +1,7 @@
+# Direção visual
+Leitura de design: página de vendas educacional para professores e gestores, com linguagem editorial clara, preservando o template oficial PaginaPro e a identidade violeta ÍCON.
+Dials: variação 4/10; movimento 3/10; densidade 5/10.
+Preservar hero centralizado, ordem comercial, prévias reais, quatro passos, pitch, seis situações de público, benefícios, complementos, oferta, garantia e FAQ. Adaptar o plano único para duas ofertas conforme instrução explícita do usuário.
+Paleta: #0F0E17 estrutura escura; #6A2BFF ação; #8A5CFF acento; #C9B8FF apoio; branco e branco violeta superfícies. Montserrat local. Raios: 10px controles, 18px cards, 26px destaque. Sombra profunda só produto e oferta. Ícones Lucide, sem emojis.
+Compor capas/páginas reais em CSS como o starter; fidelidade literal tem prioridade sobre geração de mockups. Não usar capas conceituais geradas anteriormente que diferem da capa real. Não redesenhar marca. Arquivos reais sem cortes, object-fit contain, transformações discretas, variantes compactas no celular. Fonte do template: assets/template-oficial-50licoes-enem/src/App.jsx e styles.css fornecidos na skill.
+Omitir urgência não comprovada, comparador sem fonte legítima, cenas decorativas, prova social inexistente. Substituir a ponte cognitiva não sustentada do template por descrição concreta do material; não afirmar validação científica ou retenção sem evidência. Preço e garantias em HTML.

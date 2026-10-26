@@ -1,0 +1,11 @@
+node_modules/
+dist/
+.env
+.env.*
+!.env.example
+.openai/
+
+qa-viewports.html
+regras-landing-pages/assets/
+regras-landing-pages/SKILL.md
+regras-landing-pages/references/
