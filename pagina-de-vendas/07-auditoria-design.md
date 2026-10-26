@@ -20,3 +20,6 @@ Modo: página nova a partir do starter oficial. Dials4/3/5. Paleta violeta/preto
 - Lighthouse não executado: nenhuma pontuação ou CoreWebVitalsdeprodução é alegada.
 - Não coletar dados ou instalar pixels sem IDs e finalidade definidos. Repasse de UTMs fica restrito a chaves de atribuição permitidas quando o checkout for configurado.
 - Prova social e comparador honestamente omitidos. Modelo Word é descrito por inventário, sem capa ou páginas fictícias.
+
+## Refinamento solicitado em 26/10/2026
+Mockups receberam palco, base e sombra de contato em CSS, mantendo páginas reais. Prompt centralizado acima das etapas. Planos com altura natural e preço imediatamente após o conteúdo, removendo o preenchimento artificial. Botões com brilho periódico, aura discreta e resposta de hover/foco; entradas por IntersectionObserver com fallback visível e redução de movimento. Botões desativados não animam. O checkout Essencial já foi configurado com a URL fornecida pelo usuário; o checkout Formação continua pendente. Build revisada e medições dos planos confirmam ausência do espaço artificial entre lista e preço.

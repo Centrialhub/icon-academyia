@@ -52,6 +52,19 @@ function Plan({ formation = false }) {
 }
 export default function App() {
  const [page,setPage]=useState(null);
+ useEffect(() => {
+  if (!('IntersectionObserver' in window) || window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+  const observer = new IntersectionObserver(entries => {
+   for (const entry of entries) if(entry.isIntersecting){entry.target.classList.add('is-revealed');observer.unobserve(entry.target);}
+  }, {threshold: .08, rootMargin: '0px 0px -24px 0px'});
+  const elements = document.querySelectorAll('.section-title,.mid-pitch-media,.receive-media,.audience-grid article,.bonus-card,.plan-card,.formation-detail,.guarantee-card,.safety-cards article');
+  for (const element of elements) {
+   if (element.getBoundingClientRect().top < window.innerHeight) continue;
+   element.classList.add('reveal-ready');observer.observe(element);
+  }
+  return () => {observer.disconnect();for(const element of elements)element.classList.remove('reveal-ready','is-revealed');};
+ }, []);
+
  return <>
   <a className="skip-link" href="#conteudo">Pular para o conteúdo</a>
   <main id="conteudo">
