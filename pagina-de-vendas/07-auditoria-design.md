@@ -23,3 +23,7 @@ Modo: página nova a partir do starter oficial. Dials4/3/5. Paleta violeta/preto
 
 ## Refinamento solicitado em 26/10/2026
 Mockups receberam palco, base e sombra de contato em CSS, mantendo páginas reais. Prompt centralizado acima das etapas. Planos com altura natural e preço imediatamente após o conteúdo, removendo o preenchimento artificial. Botões com brilho periódico, aura discreta e resposta de hover/foco; entradas por IntersectionObserver com fallback visível e redução de movimento. Botões desativados não animam. O checkout Essencial já foi configurado com a URL fornecida pelo usuário; o checkout Formação continua pendente. Build revisada e medições dos planos confirmam ausência do espaço artificial entre lista e preço.
+
+
+## Vitrine dos materiais — 27/10/2026
+Substituída a composição de folhas inclinadas e base oval por volumes editoriais alinhados em uma superfície retangular comum. Capa e páginas autênticas preservadas, com proporção original 1:2, sem cortes. Roteiro e guia usam o mesmo componente, evitando divergência entre a apresentação principal, seção prática, conteúdo e planos. Composição ajustada para celulares. Conferência visual em desktop e quadros de 360/430px; largura de rolagem igual à largura útil dos dois quadros. Build de produção concluída. Nenhuma promessa comercial alterada.

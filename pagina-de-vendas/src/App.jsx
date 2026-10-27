@@ -12,12 +12,14 @@ function CTA({ label = 'Quero escolher meu acesso', href = '#oferta', className 
 function SectionTitle({ children, lead }) {
   return <header className="section-title"><h2>{children}</h2>{lead && <p>{lead}</p>}</header>;
 }
-function ProductComposition({ compact = false, collection = false }) {
-  return <div className={`product-composition${compact ? ' product-composition--compact' : ''}${collection ? ' product-composition--collection' : ''}`} role="img" aria-label="Capa e páginas reais do ÍCON Essencial: guia, prompts e checklist">
-    <img className="product-sheet product-sheet--left" src="/assets/prompts.webp" alt="" width="900" height="1273" loading={compact || collection ? 'lazy' : undefined}/>
-    <img className="product-sheet product-sheet--middle" src="/assets/planejamento.webp" alt="" width="900" height="1800" loading={compact || collection ? 'lazy' : undefined}/>
-    <img className="product-sheet product-sheet--right" src="/assets/checklist.webp" alt="" width="900" height="1273" loading={compact || collection ? 'lazy' : undefined}/>
-    <div className="real-book"><img className="product-cover" src="/assets/guia-capa.webp" alt="" width="900" height="1800" loading={compact || collection ? 'lazy' : undefined} fetchPriority={!compact && !collection ? 'high' : undefined}/></div>
+function ProductComposition({ compact = false, collection = false, walkthrough = false }) {
+  const lazy = compact || collection || walkthrough;
+  return <div className={`product-composition${compact ? ' product-composition--compact' : ''}${collection ? ' product-composition--collection' : ''}${walkthrough ? ' product-composition--walkthrough' : ''}`} role="img" aria-label={walkthrough ? 'Guia oficial e roteiro de primeira aplicação, apresentados como um conjunto digital' : 'Capa e páginas reais do ÍCON Essencial: guia, prompts e checklist'}>
+    <div className="product-sheet product-sheet--left"><img src={walkthrough ? '/assets/roteiro.webp' : '/assets/prompts.webp'} alt="" width="900" height="1800" loading={lazy ? 'lazy' : undefined}/></div>
+    {!walkthrough && <div className="product-sheet product-sheet--right"><img src="/assets/checklist.webp" alt="" width="900" height="1800" loading={lazy ? 'lazy' : undefined}/></div>}
+    <div className="real-book"><img className="product-cover" src="/assets/guia-capa.webp" alt="" width="900" height="1800" loading={lazy ? 'lazy' : undefined} fetchPriority={!lazy ? 'high' : undefined}/></div>
+    <div className="product-plinth" aria-hidden="true"/>
+    <div className="product-caption" aria-hidden="true"><span>ÍCON ESSENCIAL</span><strong>{walkthrough ? 'Do primeiro acesso à aplicação.' : 'Conhecimento pronto para a sua rotina.'}</strong></div>
   </div>;
 }
 function FullPage({ page, open, ...props }) {
@@ -97,7 +99,7 @@ export default function App() {
    </div></section>
 
    <section className="section mid-pitch"><div className="content content--1040 mid-pitch-grid">
-    <div className="mid-pitch-media"><img src="/assets/roteiro.webp" alt="Primeira página do roteiro de aplicação" loading="lazy" width="900" height="1273"/><img src="/assets/guia-capa.webp" alt="Capa oficial do guia" loading="lazy" width="900" height="1800"/></div>
+    <div className="mid-pitch-media"><ProductComposition walkthrough/></div>
     <div className="mid-pitch-copy"><h2>{content.pitch.title}</h2><p>{content.pitch.text}</p><CTA/></div>
    </div></section>
 
