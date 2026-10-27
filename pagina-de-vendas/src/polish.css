@@ -39,3 +39,45 @@
 @media(max-width:800px){.hero-media{height:360px;width:min(620px,100%)}.mid-pitch-media{width:450px;max-width:100%;height:390px}.receive-media{height:370px}.plan-mockup{height:225px}.mechanism-page{width:280px}.mechanism-page img{height:440px}}
 @media(max-width:480px){.hero-media{height:295px;width:100%;margin:0}.receive-media{height:300px;padding:0}.mid-pitch-media{height:325px;width:100%}.product-composition .real-book{height:65%;top:auto;bottom:29%}.product-composition .product-sheet{height:44%;top:auto;bottom:29%}.product-composition .product-sheet--left{left:18%}.product-composition .product-sheet--right{right:17%}.product-plinth{left:9%;right:9%;bottom:23%;height:7%}.product-caption{bottom:3%;gap:5px}.product-caption span{font-size:8px}.product-caption strong{font-size:11px}.product-composition--walkthrough .real-book{left:63%;height:67%}.product-composition--walkthrough .product-sheet--left{left:13%;height:52%}.plan-mockup{height:235px}.product-composition--compact .real-book{height:67%;bottom:24%}.product-composition--compact .product-sheet{height:46%;bottom:24%}.product-composition--compact .product-sheet--left{left:15%}.product-composition--compact .product-sheet--right{right:14%}.product-composition--compact .product-plinth{bottom:18%;left:8%;right:8%}.mechanism-page{width:min(280px,100%)}.mechanism-page img{height:435px}.mechanism-grid{grid-template-columns:1fr;gap:0}.mechanism-grid article{min-height:0}.plans-grid{gap:38px}.plan-bottom{margin-top:0}}
 @media(prefers-reduced-motion:reduce){.btn,.btn::after{animation:none}.btn,.btn svg,.reveal-ready{transition:none}.reveal-ready{opacity:1;transform:none}.btn:hover,.btn:focus-visible,.btn:hover svg,.btn:focus-visible svg{transform:none}}
+
+/* Complementos: grade no desktop e carrossel manual compacto no celular. */
+.bonus-carousel .bonus-card-top>img{width:auto;height:210px;max-width:100%;object-fit:contain}
+.bonus-carousel .rail{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px;padding:0;overflow:visible;cursor:auto}
+.bonus-carousel>.rail-arrow,.bonus-carousel .rail-pagination{display:none}
+@media(min-width:601px) and (max-width:900px){.bonus-carousel .rail{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){
+ .bonus-carousel{width:100%;min-width:0}
+ .bonus-carousel .rail{display:flex;gap:14px;overflow-x:auto;overflow-y:hidden;padding:4px 1px 12px;scroll-padding-inline:1px;scroll-snap-type:x mandatory;align-items:stretch;overscroll-behavior-inline:contain;cursor:grab}
+ .bonus-carousel .bonus-card{flex:0 0 88%;min-width:0;scroll-snap-align:start;opacity:1;transform:none;transition:none}
+ .bonus-carousel .bonus-card-top{height:160px;min-height:160px;padding:12px 18px}
+ .bonus-carousel .bonus-card-top>img{width:auto;height:136px;max-width:100%;transform:none;object-fit:contain;object-position:center;filter:drop-shadow(0 5px 6px #321a4b20)}
+ .bonus-carousel .bonus-card-body{padding:18px;flex:1}
+ .bonus-carousel .bonus-card h3{font-size:19px;line-height:1.3}
+ .bonus-carousel .bonus-card-body>p{font-size:13px;line-height:1.65;margin-bottom:14px}
+ .bonus-carousel .bonus-gain{font-size:12px;line-height:1.5;margin-bottom:16px}
+ .bonus-carousel .bonus-price{margin-top:auto}
+ .bonus-carousel .document-inventory{gap:6px}
+ .bonus-carousel .document-inventory>svg{width:24px;height:24px}
+ .bonus-carousel .document-inventory>strong{font-size:12px}
+ .bonus-carousel .document-inventory ul{font-size:10px;line-height:1.5}
+ .bonus-carousel .document-inventory>span{padding-top:6px}
+ .bonus-carousel .rail-pagination{display:flex;align-items:center;justify-content:center;gap:12px;padding:4px 40px 0;min-height:44px;color:#776487;font-size:10px}
+ .rail-pagination>div{display:flex;gap:0}.rail-pagination button{display:grid;place-items:center;width:28px;height:36px;padding:0;border:0;background:transparent}
+ .rail-pagination button span{width:6px;height:6px;border-radius:99px;background:#d3c4e6;transition:width .2s,background .2s}
+ .rail-pagination button[aria-current="true"] span{width:20px;background:#6a2bff}
+ .bonus-carousel>.rail-arrow{display:grid;top:auto;bottom:1px;transform:none;width:36px;height:36px;border:1px solid #e1d6ef;box-shadow:none;background:#fff}
+ .bonus-carousel>.rail-arrow--left{left:0}.bonus-carousel>.rail-arrow--right{right:0}
+ .mid-pitch-grid{gap:22px}
+ .mid-pitch-media{height:220px;width:min(360px,100%);margin-inline:auto;border:1px solid #e5daf2;border-radius:18px;background:radial-gradient(ellipse at 50% 70%,#d8c4f1 0%,#ede5f8 45%,#f5f2fc 85%);overflow:hidden}
+ .mid-pitch-media .product-plinth,.mid-pitch-media .product-caption{display:none}
+ .mid-pitch-media .real-book{height:87%;bottom:7%;left:60%;transform:translateX(-50%) perspective(1100px) rotateY(-7deg);box-shadow:-3px 0 0 #6133a3,-6px 1px 0 #d8cbed,-8px 2px 0 #53267f,12px 10px 18px #24103525}
+ .mid-pitch-media .product-sheet--left{height:68%;bottom:7%;left:22%;transform:rotate(-3deg)}
+ .mid-pitch-copy>p{line-height:1.7;margin:16px 0 22px}
+ .hero-media,.receive-media{height:245px}
+ .hero-media .product-caption,.receive-media .product-caption{display:none}
+ .hero-media .product-plinth,.receive-media .product-plinth{height:4%;bottom:6%;border-radius:5px;left:16%;right:16%}
+ .hero-media .real-book,.receive-media .real-book{height:86%;bottom:9%}
+ .hero-media .product-sheet,.receive-media .product-sheet{height:60%;bottom:9%}
+ .hero-media .product-sheet--left,.receive-media .product-sheet--left{left:16%}
+ .hero-media .product-sheet--right,.receive-media .product-sheet--right{right:15%}
+}

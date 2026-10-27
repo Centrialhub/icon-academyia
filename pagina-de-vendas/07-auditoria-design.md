@@ -27,3 +27,7 @@ Mockups receberam palco, base e sombra de contato em CSS, mantendo páginas reai
 
 ## Vitrine dos materiais — 27/10/2026
 Substituída a composição de folhas inclinadas e base oval por volumes editoriais alinhados em uma superfície retangular comum. Capa e páginas autênticas preservadas, com proporção original 1:2, sem cortes. Roteiro e guia usam o mesmo componente, evitando divergência entre a apresentação principal, seção prática, conteúdo e planos. Composição ajustada para celulares. Conferência visual em desktop e quadros de 360/430px; largura de rolagem igual à largura útil dos dois quadros. Build de produção concluída. Nenhuma promessa comercial alterada.
+
+
+## Ajuste mobile e carrossel — 27/10/2026
+Primeira aplicação: apresentação mobile reduzida de 325px para 220px, sem plataforma e legenda redundante, com capa e roteiro íntegros em painel compacto. Complementos em carrossel manual até 600px; quatro cards preservados, indicadores de posição, setas, toque nativo e teclado. Grade mantida no desktop. Miniaturas sem cortes. Contador testado em 2/4; ausência de overflow geral em quadros 360 e 430px. Navegação por indicadores respeita movimento reduzido.

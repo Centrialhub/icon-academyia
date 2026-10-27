@@ -98,7 +98,7 @@ export default function App() {
     <p className="mechanism-close">{content.mechanismClose}</p><CTA/>
    </div></section>
 
-   <section className="section mid-pitch"><div className="content content--1040 mid-pitch-grid">
+   <section className="section mid-pitch" id="primeira-aplicacao"><div className="content content--1040 mid-pitch-grid">
     <div className="mid-pitch-media"><ProductComposition walkthrough/></div>
     <div className="mid-pitch-copy"><h2>{content.pitch.title}</h2><p>{content.pitch.text}</p><CTA/></div>
    </div></section>
@@ -114,12 +114,12 @@ export default function App() {
     <article className="receive-card"><p className="access-badge">60 PÁGINAS • 10 CAPÍTULOS</p><h3>Um guia para acompanhar fazendo.</h3><p>O mesmo guia principal está incluído nas duas opções de acesso.</p><ul>{content.benefits.map(item=><li key={item}><Check size={20} aria-hidden="true"/><span>{item}</span></li>)}</ul></article>
    </div></section>
 
-   <section className="section bonuses"><div className="content content--1180 section-flow">
+   <section className="section bonuses" id="complementos"><div className="content content--1180 section-flow">
     <SectionTitle lead="Complementos do kit para passar da leitura à execução. Incluídos no Essencial e na Formação.">Além de aprender,<br className="desktop-break"/> tenha de onde começar.</SectionTitle>
-    <div className="bonus-grid">{content.complements.map(item=><article className="bonus-card" key={item.title}>
+    <ScrollRail className="bonus-carousel" label="Complementos incluídos no kit" pagination>{content.complements.map(item=><article className="bonus-card" key={item.title}>
      <div className={`bonus-card-top ${item.image ? '' : 'bonus-card-top--documents'}`}>{item.image ? <img src={item.image} alt={`Página real: ${item.title}`} width="900" height="1273" loading="lazy"/> : <div className="document-inventory"><FileText size={42} aria-hidden="true"/><strong>Estruturas para editar</strong><ul><li>Plano de aula</li><li>Atividade escolar</li><li>Gabarito separado</li><li>Comunicado às famílias</li></ul><span>4 arquivos em Word</span></div>}</div>
      <div className="bonus-card-body"><h3>{item.title}</h3><p>{item.text}</p><div className="bonus-gain"><Check size={18} aria-hidden="true"/><span>{item.gain}</span></div><div className="bonus-price"><strong>INCLUÍDO NO KIT</strong></div></div>
-    </article>)}</div>
+    </article>)}</ScrollRail>
    </div></section>
 
    <section className="section offer" id="oferta"><div className="content content--1120 section-flow">
