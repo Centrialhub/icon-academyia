@@ -31,3 +31,7 @@ Substituída a composição de folhas inclinadas e base oval por volumes editori
 
 ## Ajuste mobile e carrossel — 27/10/2026
 Primeira aplicação: apresentação mobile reduzida de 325px para 220px, sem plataforma e legenda redundante, com capa e roteiro íntegros em painel compacto. Complementos em carrossel manual até 600px; quatro cards preservados, indicadores de posição, setas, toque nativo e teclado. Grade mantida no desktop. Miniaturas sem cortes. Contador testado em 2/4; ausência de overflow geral em quadros 360 e 430px. Navegação por indicadores respeita movimento reduzido.
+
+
+## Checkout Formação configurado — 28/10/2026
+Associado o CTA da Formação ÍCON, R$197,90, ao endereço Cakto enviado pelo usuário. Mantida a URL centralizada em src/comercial.js; o botão deixa de exibir “Vendas em breve”.
